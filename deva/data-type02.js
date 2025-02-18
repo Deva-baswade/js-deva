@@ -18,7 +18,7 @@ console.log(bignumber);
 
 let arr = ["devnand","pavan","ram"];
 let myobj = {
-    name:devanand,
+    name:"devanand",
     age:19
 };
 let myfunction = function(){
@@ -27,6 +27,27 @@ let myfunction = function(){
 }
 //for checking the type use typrof
 
+
+//*****************memory allocation******************//
+//stack memory use for store the primitive datatype
+//in heap memory stire we non primitive datatype
+
+let myyoutubeName = "baswadedeva";
+let anothervariable = myyoutubeName;
+anothervariable = "pavan";
+console.log(myyoutubeName);
+console.log(anothervariable);
+
+
+let userOne = {   //this also align to this data
+    email:"baswadedeva@gmail.com",
+    upi:"user@ybl"
+};
+let userTwo = userOne;
+userTwo.email="pavanbaswade@123";//this align to first data
+
+console.log(userOne.email);
+console.log(userTwo.email);
 
 
 
