@@ -1,4 +1,4 @@
-////the destuctring the object 
+//the destuctring the object 
 const user ={
     coursename:"javasript",
     coursetrcher:"devanand",
@@ -7,3 +7,9 @@ const user ={
 
 const {coursename:name} = user
 console.log(name);
+
+// {
+//     "name":"devanand",
+//     "id":12345,
+//     "isdeva":true
+// }
