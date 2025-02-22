@@ -30,10 +30,29 @@
 // console.log("a ",array1);
 // const array2 = array.splice(1,3);
 // console.log("b ",array2);
+//  const marvel_hero = ["thor","ironman","shaktiman"];
+// const dc_heros = ["superman","flash","batman"];
+// marvel_hero.push(dc_heros);//[ 'thor', 'ironman', 'shaktiman', [ 'superman', 'flash', 'batman' ] ]
+//marvel_hero.concat(dc_heros);//[ 'thor', 'ironman', 'shaktiman', [ 'superman', 'flash', 'batman' ] ]
+//const all = marvel_hero.concat(dc_heros);//[ 'thor', 'ironman', 'shaktiman', 'superman', 'flash', 'batman' ]
+//console.log(all);
+
+// const for_spread_property = [...marvel_hero,...dc_heros];
+// console.log(for_spread_property);//[ 'thor', 'ironman', 'shaktiman', 'superman', 'flash', 'batman' ]
+
+////$$$$$$$$$$$$$$$$$$$$$ flat property
+
+// const array1 = [1,2,3,4[4,3,2,1],5,6[6,[1,2,3],5,[1,2,3,4]]];//convert into one array
+// const array2 = array1.flat(Infinity);
+// console.log(array2);//[ 1, 2, 3, undefined, 5, undefined ]
 
 
+let num1 = 100;
+let num2 = 200;
+let num3  = 300;
+console.log(Array.of(num1,num2,num3));
 
 
-
+ 
 
 
