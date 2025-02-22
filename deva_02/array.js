@@ -47,10 +47,10 @@
 // console.log(array2);//[ 1, 2, 3, undefined, 5, undefined ]
 
 
-let num1 = 100;
-let num2 = 200;
-let num3  = 300;
-console.log(Array.of(num1,num2,num3));
+// let num1 = 100;
+// let num2 = 200;
+// let num3  = 300;
+// console.log(Array.of(num1,num2,num3));//[ 100, 200, 300 ]
 
 
  
