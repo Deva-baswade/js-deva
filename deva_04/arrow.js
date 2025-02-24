@@ -70,3 +70,6 @@ add(4,5)//ANOTHER IS THE    (num+num2)"|"
 
 // another one is the object in implicit 
 // const var = (user)=>({username:"devanand"})
+
+
+
