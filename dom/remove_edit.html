@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom_Remove_Edit</title>
+    </head>
+<body style="background-color: black;color: white;">
+   <ul class="langauge">
+    <li>javasript</li>
+   </ul>
+</body>
+<script>
+    function addLang(langaugename){
+        const li = document.createElement('li')
+       li.innerHTML=`${langaugename}`;
+       document.querySelector('.langauge').
+       appendChild(li);
+              
+    }
+    addLang("python")
+    addLang('java')
+
+    //another way to write the same code of the above
+    function addLang(langname){
+        const li = document.createElement('li');
+        const addtext = document.createTextNode(langname)
+        // this the another method => li.appendChild(addtext)
+        li.appendChild(document.createTextNode(langname))
+        document.querySelector('.langauge').appendChild(li)
+    }
+    addLang('html')
+
+    //edit he value in the attribute
+    const secondlang = document.querySelector("li:nth-child(2)")
+    const newli_item = document.createElement('li')
+    newli_item.textContent = 'golang';
+    secondlang.replaceWith(newli_item)
+
+    //edit the 
+    const firstlang = document.querySelector("li:first-child")
+    firstlang.outerHTML = '<li>css</li>'
+
+
+    //remove the element
+    const lastlang = document.querySelector('li:last-child')
+    lastlang.remove()
+</script>
+</html>
