@@ -21,59 +21,61 @@
     
 </body>
 <script>
-     //most imp  event type of mouse ,timestamp,defaultPrevented(this save info from saving)
-    //target,toElement,srcElemeent
-    //clientx ,clienty,screenx ,screeny
-    //offsetx,offsety
-    //altkey,ctrlkey,shiftkey,metakey,keycode
-    //in history of js there is so many approch attachevent ,jQuery-onclick
-    //down is the thrird approch
+    //  most imp  event type of mouse ,timestamp,defaultPrevented(this save info from saving)
+    // target,toElement,srcElemeent
+    // clientx ,clienty,screenx ,screeny
+    // offsetx,offsety
+    // altkey,ctrlkey,shiftkey,metakey,keycode
+    // in history of js there is so many approch attachevent ,jQuery-onclick
+    // down is the thrird approch
 
 
     //js is the sequnclly run the code
-    // const owl = document.getElementById('owl').onclick=function(){
+    // //const owl = document.getElementById('owl').onclick=function(){
     //     alert('Owl is clicked');
     // }//this is not well approch
 
 
-    // const owl = document.getElementById('owl').addEventListener('click',function(){
-    //     //the default is the false
-    //     alert('Owl is clicked again');
-    // })//there is so many evenlistenern down up
+    const owl = document.getElementById('owl').addEventListener('click',function(){
+        //the default is the false
+        alert('Owl is clicked again');
+    })//there is so many evenlistenern down up
 
 
-    // document.getElementById('owl').addEventListener('click',function(e){
-    //     console.log(e);
+    document.getElementById('owl').addEventListener('click',function(e){
+        console.log(e);
         
-    // },false)//false this the default value
+    },false)//false this the default value
 
-    // //event propagation
+    //event propagation
 
 
-    // document.getElementById('images').addEventListener('click',function(e){
-    //     console.log('ul is clicked');
+    document.getElementById('images').addEventListener('click',function(e){
+        console.log('ul is clicked');
         
-    // },false)//if here true then the ul is clicked first then the owl is clicked
-    // //if here false then the owl is clicked first then the ul is clicked
+    },false)//if here true then the ul is clicked first then the owl is clicked
+    //if here false then the owl is clicked first then the ul is clicked
     
     
-    // document.getElementById('owl').addEventListener('click',function(e){
-    //     console.log('owl is clicked');
-    //     e.stopPropagation();//this is stop the propagation
-    //     //this not take above the ul
+    document.getElementById('owl').addEventListener('click',function(e){
+        console.log('owl is clicked');
+        e.stopPropagation();//this is stop the propagation
+        //this not take above the ul
         
-    // },false)//this caalled bubbling
+    },false)//this caalled bubbling
 
-    // //the preventdefault this is the stop from saving the info
-    // document.getElementById('google').addEventListener('click',function(e){
-    //     e.preventDefault();
-    //     e.stopPropagation();
-    //     console.log('google is clicked');
+    //the preventdefault this is the stop from saving the info
+    document.getElementById('google').addEventListener('click',function(e){
+        e.preventDefault();
+        e.stopPropagation();
+        console.log('google is clicked');
         
-    // },false)
+    },false)
 
 
     //program when click then delte the image
+
+    //this imp method
     document.getElementById('images').addEventListener('click',function(e){
        console.log(e.target.parentNode);
        let removeIt = e.target.parentNode;
