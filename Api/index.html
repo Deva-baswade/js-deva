@@ -1,0 +1,29 @@
+//in this userapi
+//api.github.com/users/deva-baswade
+//xmlhttp mdn documentation
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    const requestUrl = 'https://api.github.com/users/deva-baswade';
+    const xhr = new XMLHttpRequest();
+    xhr.open('GET', requestUrl);
+   xhr.onreadystatechange = function(){
+         if(xhr.readyState === 4){
+              console.log(xhr.status);
+              console.log(xhr.responseText);
+         }
+    
+   }
+   xhr.send();
+
+    
+</script>
+</html>
